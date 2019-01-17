@@ -57,27 +57,27 @@ include CMakeFiles/filler.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/filler.dir/flags.make
 
-CMakeFiles/filler.dir/main.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filler.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/main.c.o   -c /home/bender/CLionProjects/filler/main.c
+CMakeFiles/filler.dir/srcs/main.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/srcs/main.c.o: ../srcs/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filler.dir/srcs/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/main.c.o   -c /home/bender/CLionProjects/filler/srcs/main.c
 
-CMakeFiles/filler.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/main.c > CMakeFiles/filler.dir/main.c.i
+CMakeFiles/filler.dir/srcs/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/main.c > CMakeFiles/filler.dir/srcs/main.c.i
 
-CMakeFiles/filler.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/main.c -o CMakeFiles/filler.dir/main.c.s
+CMakeFiles/filler.dir/srcs/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/main.c -o CMakeFiles/filler.dir/srcs/main.c.s
 
 # Object files for target filler
 filler_OBJECTS = \
-"CMakeFiles/filler.dir/main.c.o"
+"CMakeFiles/filler.dir/srcs/main.c.o"
 
 # External object files for target filler
 filler_EXTERNAL_OBJECTS =
 
-filler: CMakeFiles/filler.dir/main.c.o
+filler: CMakeFiles/filler.dir/srcs/main.c.o
 filler: CMakeFiles/filler.dir/build.make
 filler: CMakeFiles/filler.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable filler"

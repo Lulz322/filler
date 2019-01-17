@@ -3,4 +3,4 @@ project(filler C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(filler main.c filler.h)
+add_executable(filler srcs/main.c includes/filler.h)

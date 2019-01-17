@@ -123,32 +123,32 @@ filler/fast:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/build
 .PHONY : filler/fast
 
-main.o: main.c.o
+srcs/main.o: srcs/main.c.o
 
-.PHONY : main.o
+.PHONY : srcs/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/main.c.o
-.PHONY : main.c.o
+srcs/main.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/srcs/main.c.o
+.PHONY : srcs/main.c.o
 
-main.i: main.c.i
+srcs/main.i: srcs/main.c.i
 
-.PHONY : main.i
+.PHONY : srcs/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/main.c.i
-.PHONY : main.c.i
+srcs/main.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/srcs/main.c.i
+.PHONY : srcs/main.c.i
 
-main.s: main.c.s
+srcs/main.s: srcs/main.c.s
 
-.PHONY : main.s
+.PHONY : srcs/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/main.c.s
-.PHONY : main.c.s
+srcs/main.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/srcs/main.c.s
+.PHONY : srcs/main.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... filler"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... srcs/main.o"
+	@echo "... srcs/main.i"
+	@echo "... srcs/main.s"
 .PHONY : help
 
 

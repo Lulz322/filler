@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/bender/CLionProjects/filler/filler.h
+/home/bender/CLionProjects/filler/includes/filler.h
 stdio.h
 -
 stdlib.h
 -
 
-/home/bender/CLionProjects/filler/main.c
-filler.h
-/home/bender/CLionProjects/filler/filler.h
+/home/bender/CLionProjects/filler/srcs/main.c
+../includes/filler.h
+/home/bender/CLionProjects/filler/includes/filler.h
+stdio.h
+-
+unistd.h
+-
 

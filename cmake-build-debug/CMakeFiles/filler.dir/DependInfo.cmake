@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/bender/CLionProjects/filler/main.c" "/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles/filler.dir/main.c.o"
+  "/home/bender/CLionProjects/filler/srcs/main.c" "/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles/filler.dir/srcs/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
