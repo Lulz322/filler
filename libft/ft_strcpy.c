@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/17 15:20:46 by iruban            #+#    #+#             */
-/*   Updated: 2018/11/02 15:58:00 by iruban           ###   ########.fr       */
+/*   Created: 2018/10/30 16:21:56 by iruban            #+#    #+#             */
+/*   Updated: 2018/10/30 16:22:16 by iruban           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../../Desktop/iruban2/libft.h"
 
-void	ft_putchar(unsigned char c)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	write(1, &c, 1);
+	int counter;
+
+	counter = 0;
+	while (src[counter])
+	{
+		dst[counter] = src[counter];
+		counter++;
+	}
+	dst[counter] = '\0';
+	return (dst);
 }

@@ -1,59 +1,51 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/05/03 22:30:54 by bsouchet          #+#    #+#              #
-#    Updated: 2019/01/08 11:42:52 by iruban           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+NAME = iruban.filler
 
-C = clang
 
-NAME = libftprintf.a
+CC = gcc
+@CFLAGS = -Wall -Wextra -Werror
 
-FLAGS = -Wall -Wextra -Werror -O2
+SRC = srcs/get_next_line.c srcs/main.c srcs/create_array.c
 
-LIBFT = libft
+OBJ = $(SRC:.c=.o)
 
-DIR_S = srcs
+LIBFT = libft/libft.a
+LMAKE = make -C libft
 
-DIR_O = tmp
+WHITE=\033[0m
+GREEN=\033[32m
+RED=\033[31m
 
-HEADER = includes
-
-SOURCES = *.c
-
-SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
-
-OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))
+DEL = rm -rf
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	@make -C $(LIBFT)
-	@cp libft/libft.a ./$(NAME)
+$(OBJ): %.o: %.c
+	@echo -n '+'
+	@$(CC) -c $(CFLAGS) $< -o $@
 
-$(DIR_O)/%.o: $(DIR_S)/%.c
-	@mkdir -p tmp
-	@$(CC) $(FLAGS) -I $(HEADER) -o $@ -c $<
+$(LIBFT):
+	@$(LMAKE)
 
-norme:
-	norminette ./libft/
-	@echo
-	norminette ./$(HEADER)/
-	@echo
-	norminette ./$(DIR_S)/
+$(NAME): $(LIBFT) $(OBJ)
+	@$(CC) $(OBJ)  $(LIBFT) -o $(NAME)
+	@echo "> $(GREEN)filler$(WHITE)"
+
+dfd:
+	@$(DEL) $(OBJ)
 
 clean:
-	@rm -f $(OBJS)
-	@rm -rf $(DIR_O)
-	@make clean -C $(LIBFT)
+	@$(DEL) $(OBJ)
+	@$(LMAKE) clean
 
 fclean: clean
-	@rm -f $(NAME)
-	@make fclean -C $(LIBFT)
+	@$(LMAKE) fclean
+	@$(DEL) $(NAME)
+	@echo "$(RED)deleted$(WHITE): ./filler"
 
 re: fclean all
+
+test: all
+	 ./resources/filler_vm -f ./resources/maps/map00 -p1 ./iruban.filler
+
+
+.PHONY: all fclean clean re test

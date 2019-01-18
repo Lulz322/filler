@@ -1,125 +1,74 @@
 #include "../includes/filler.h"
-#include <stdio.h>
-#include <unistd.h>
-
-#define UP 119
-#define DOWN 115
-#define LEFT 97
-#define RIGHT 100
 
 
-typedef struct coords
+int take_piece(char *line)
 {
-	int x;
-	int y;
-} coords;
+	int		n;
+	int		i;
 
-coords cord;
-
-
-void fill_o_board(unsigned char map[10][10])
-{
-	int i;
-	int j;
+	n = 6;
 	i = 0;
-	while (i < 10)
+	g_token.y = ft_atoi(&line[6]);
+	while (ft_isdigit(line[n]))
+		n++;
+	n++;
+	g_token.x = ft_atoi(&line[n]);
+	g_token.token = create_array();
+	printf("\n%d %d\n", g_token.x, g_token.y);
+	while (i < g_token.y)
 	{
-		j = -1;
-		while (++j < 10)
-			map[i][j] = ' ';
+		get_next_line(0, &line);
+		g_token.token[i] = ft_strdup(line);
 		i++;
 	}
+	i = 0;
+	while (i < g_token.y)
+		printf("%s\n", g_token.token[i++]);
+	return (0);
 }
 
-void create_board(unsigned char map[10][10])
+
+int	take_map(void)
 {
 	int i;
-	int j;
+	char *line;
 
 	i = 0;
-	while (i < 10)
+	g_map.map = create_array();
+	get_next_line(0, &line);
+	while (i <= g_map.y)
 	{
-		j = -1;
-		while (++j < 10)
-			if (i == 0 || j == 0 || i == 9 || j == 9)
-				map[i][j] = 178;
-		i++;
-	}
-}
-
-void print_map(unsigned char map[10][10])
-{
-	int i;
-	int j;
-
-	i = 0;
-
-	while (i < 10)
-	{
-		j = -1;
-		while (++j < 10)
-			printf("%c ", map[i][j]);
-		printf("\n");
-		i++;
-	}
-}
-
-void del_heash(unsigned char map[10][10])
-{
-	int i;
-	int j;
-
-	i = 1;
-	while (i < 9)
-	{
-		j = 0;
-		while (j++ < 8)
-				map[i][j] = ' ';
+		get_next_line(0, &line);
+		if (ft_isdigit(line[0]))
+			g_map.map[i] = ft_strdup(line + 4);
+		else
+			take_piece(line);
 		i++;
 	}
 }
 
 
-void place_character(unsigned char map[10][10], int x, int y)
+
+
+int main(void)
 {
-	del_heash(map);
-	map[y][x] = '#';
-	cord.x = x;
-	cord.y = y;
+	char *line;
 
-}
-
-
-int main() {
-	unsigned char map[10][10];
-	int a;
-
-	fill_o_board(map);
-	create_board(map);
-	printf("\nSTEP TWO\n");
-	print_map(map);
-	cord.y = 5;
-	cord.x = 3;
-	place_character(map, cord.x, cord.y);
-	while (a != 27)
+	get_next_line(0, &line);
+	g_cvars.friend = (ft_atoi(line + 10) == 1) ? '0' : 'X';
+	printf("%c\n", g_cvars.friend);
+	while (1)
 	{
-		printf("WAITING...\n");
-		a = getchar();
-		if (a == UP)
-			if (map[cord.y - 1][cord.x] == ' ')
-				cord.y--;
-		if (a == DOWN)
-			if (map[cord.y + 1][cord.x] == ' ')
-				cord.y++;
-		if (a == LEFT)
-			if (map[cord.y][cord.x - 1] == ' ')
-				cord.x--;
-		if (a == RIGHT)
-			if (map[cord.y][cord.x + 1]  == ' ')
-				cord.x++;
-		place_character(map, cord.x, cord.y);
-		print_map(map);
+		get_next_line(0, &line);
+		g_map.y = ft_atoi(&line[8]);
+		g_map.x = ft_atoi(&line[11]);
+		printf("\n%d %d\n", g_map.y, g_map.x);
+		take_map();
 	}
+	//if (!line[10] || (line[10] != '1' && line[10] != '2'))
+		//return (printf("error about player position"));
+
+
 
 
 
