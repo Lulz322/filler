@@ -70,10 +70,11 @@ void	set_me(void)
 }
 void print(void)
 {
-	ft_putnbr(g_answer.y_answer);
+	printf("%d %d\n", g_answer.y_answer, g_answer.x_answer);
+	/*ft_putnbr(g_answer.y_answer);
 	ft_putchar(' ');
 	ft_putnbr(g_answer.x_answer);
-	ft_putchar('\n');
+	ft_putchar('\n');*/
 }
 
 int main(void)
@@ -89,6 +90,8 @@ int main(void)
 			return false;
 		print();
 	}
+	free(g_map.map);
+	free(g_token.token);
 	return (0);
 
 }
