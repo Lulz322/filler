@@ -4,7 +4,7 @@ NAME = iruban.filler
 CC = gcc
 @CFLAGS = -Wall -Wextra -Werror
 
-SRC = srcs/get_next_line.c srcs/main.c srcs/create_array.c
+SRC = srcs/get_next_line.c srcs/main.c srcs/create_array.c srcs/set_pos.c srcs/piece.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -45,7 +45,7 @@ fclean: clean
 re: fclean all
 
 test: all
-	 ./resources/filler_vm -f ./resources/maps/map00 -p1 ./iruban.filler
+	 ./resources/filler_vm -f ./resources/maps/map00 -p2 ./iruban.filler -p1 ./resources/players/abanlin.filler -v
 
 
 .PHONY: all fclean clean re test

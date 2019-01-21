@@ -12,6 +12,12 @@
 #include "get_next_line.h"
 # include "../libft/includes/libft.h"
 
+enum	e_bool { false, true };
+
+# define _BOOL	typedef enum e_bool bool
+
+_BOOL;
+
 typedef struct s_cvars
 {
 	char friend;
@@ -38,6 +44,31 @@ typedef struct s_token
 
 t_token g_token;
 
+typedef struct s_coords
+{
+	int enemy_x;
+	int enemy_y;
+	int friend_x;
+	int friend_y;
+}		t_coords;
+
+t_coords g_coords;
+
+typedef struct s_answer
+{
+	int x_answer;
+	int y_answer;
+}		t_answer;
+
+t_answer g_answer;
+
 char	**create_array(void);
+void	set_position(void);
+int	set_piece(char *line);
+bool	try_right_downside(void);
+bool	try_left_downside(void);
+bool	try_right_upside(void);
+bool	try_left_upside(void);
+bool 	place_piece(void);
 
 #endif

@@ -15,7 +15,6 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# define BUFF_SIZE 8
 
 # define _ERR_NOTIS(ex) if (!(ex)) return NULL;
 

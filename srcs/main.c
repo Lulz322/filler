@@ -1,7 +1,7 @@
 #include "../includes/filler.h"
 
 
-int take_piece(char *line)
+int set_piece(char *line)
 {
 	int		n;
 	int		i;
@@ -13,64 +13,82 @@ int take_piece(char *line)
 		n++;
 	n++;
 	g_token.x = ft_atoi(&line[n]);
-	g_token.token = create_array();
-	printf("\n%d %d\n", g_token.x, g_token.y);
+	if (!g_token.token)
+		g_token.token = create_array();
 	while (i < g_token.y)
 	{
 		get_next_line(0, &line);
 		g_token.token[i] = ft_strdup(line);
 		i++;
 	}
-	i = 0;
-	while (i < g_token.y)
-		printf("%s\n", g_token.token[i++]);
 	return (0);
 }
 
-
-int	take_map(void)
+void	set_map(void)
 {
 	int i;
 	char *line;
 
 	i = 0;
-	g_map.map = create_array();
+	get_next_line(0, &line);
+	g_map.y = ft_atoi(&line[8]);
+	g_map.x = ft_atoi(&line[11]);
+	if (!g_map.map)
+		g_map.map = create_array();
 	get_next_line(0, &line);
 	while (i <= g_map.y)
 	{
 		get_next_line(0, &line);
 		if (ft_isdigit(line[0]))
 			g_map.map[i] = ft_strdup(line + 4);
-		else
-			take_piece(line);
 		i++;
 	}
+	set_piece(line);
+	if (g_coords.enemy_x == 0 && g_coords.enemy_y == 0 && g_coords.friend_y == 0 && g_coords.friend_x == 0)
+		set_position();
+}
+
+void	set_enemy(void)
+{
+	if (g_cvars.friend == 'O')
+		g_cvars.enemy = 'X';
+	if (g_cvars.friend == 'X')
+		g_cvars.enemy = 'O';
 }
 
 
-
-
-int main(void)
+void	set_me(void)
 {
 	char *line;
 
 	get_next_line(0, &line);
-	g_cvars.friend = (ft_atoi(line + 10) == 1) ? '0' : 'X';
-	printf("%c\n", g_cvars.friend);
-	while (1)
+	if (ft_atoi(line + 10) == 1)
+		g_cvars.friend = 'O';
+	else
+		g_cvars.friend = 'X';
+	set_enemy();
+}
+void print(void)
+{
+	ft_putnbr(g_answer.y_answer);
+	ft_putchar(' ');
+	ft_putnbr(g_answer.x_answer);
+	ft_putchar('\n');
+}
+
+int main(void)
+{
+	bool game;
+
+	game = true;
+	set_me();
+	while (game)
 	{
-		get_next_line(0, &line);
-		g_map.y = ft_atoi(&line[8]);
-		g_map.x = ft_atoi(&line[11]);
-		printf("\n%d %d\n", g_map.y, g_map.x);
-		take_map();
+		set_map();
+		if (place_piece() == false)
+			return false;
+		print();
 	}
-	//if (!line[10] || (line[10] != '1' && line[10] != '2'))
-		//return (printf("error about player position"));
+	return (0);
 
-
-
-
-
-	return 0;
 }

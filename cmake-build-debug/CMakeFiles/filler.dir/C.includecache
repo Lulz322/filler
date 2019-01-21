@@ -6,17 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/bender/CLionProjects/filler/includes/filler.h
+/Users/iruban/CLionProjects/filler/includes/filler.h
 stdio.h
 -
 stdlib.h
 -
+string.h
+-
+fcntl.h
+-
+get_next_line.h
+/Users/iruban/CLionProjects/filler/includes/get_next_line.h
+../libft/includes/libft.h
+/Users/iruban/CLionProjects/filler/libft/includes/libft.h
 
-/home/bender/CLionProjects/filler/srcs/main.c
-../includes/filler.h
-/home/bender/CLionProjects/filler/includes/filler.h
-stdio.h
+/Users/iruban/CLionProjects/filler/includes/get_next_line.h
+filler.h
+/Users/iruban/CLionProjects/filler/includes/filler.h
+
+/Users/iruban/CLionProjects/filler/libft/includes/libft.h
+string.h
+-
+stdlib.h
 -
 unistd.h
 -
+
+/Users/iruban/CLionProjects/filler/srcs/main.c
+../includes/filler.h
+/Users/iruban/CLionProjects/filler/includes/filler.h
 
