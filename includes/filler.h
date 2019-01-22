@@ -70,5 +70,7 @@ bool	try_left_downside(void);
 bool	try_right_upside(void);
 bool	try_left_upside(void);
 bool 	place_piece(void);
-
+void	set_me(void);
+bool	try_set_piece(int i, int j);
+bool	check_place(int i, int j);
 #endif

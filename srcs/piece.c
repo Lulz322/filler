@@ -31,15 +31,6 @@ bool	check_place(int i, int j)
 	return ((answer == 1) ? true : false);
 }
 
-
-bool	try_set_piece(int i, int j)
-{
-	if (i + g_token.y > g_map.y || j + g_token.x > g_map.x)
-		return (false);
-	else
-		return (check_place(i , j));
-}
-
 bool	try_left_upside(void)
 {
 	int y;

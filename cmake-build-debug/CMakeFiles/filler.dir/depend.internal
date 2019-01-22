@@ -15,10 +15,10 @@ CMakeFiles/filler.dir/libft/ft_itoa.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_itoa.c
 CMakeFiles/filler.dir/libft/ft_memcmp.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_memcmp.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_memcpy.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_memcpy.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_memset.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_memset.c
@@ -33,24 +33,24 @@ CMakeFiles/filler.dir/libft/ft_putstr.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_putstr.c
 CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_putstr_fd.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strcat.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_strcat.c
 CMakeFiles/filler.dir/libft/ft_strchr.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strchr.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strcmp.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strcmp.c
 CMakeFiles/filler.dir/libft/ft_strcpy.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strcpy.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strdel.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_strdel.c
 CMakeFiles/filler.dir/libft/ft_strjoin.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strjoin.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strlen.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_strlen.c
@@ -59,16 +59,16 @@ CMakeFiles/filler.dir/libft/ft_strncat.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strncat.c
 CMakeFiles/filler.dir/libft/ft_strncpy.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strncpy.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strnew.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_strnew.c
 CMakeFiles/filler.dir/libft/ft_strstr.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strstr.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_strsub.c.o
  /Users/iruban/CLionProjects/filler/libft/ft_strsub.c
- /Users/iruban/Desktop/iruban2/libft.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_swap.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_swap.c

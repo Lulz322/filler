@@ -80,6 +80,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 void			ft_putendl(char const *s);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putnbr_fd(int n, int fd);
+char			*ft_strncpy(char *dst, const char *src, size_t len);
 void			ft_putnbr(long long n);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);

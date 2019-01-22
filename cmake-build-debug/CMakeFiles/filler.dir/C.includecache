@@ -32,7 +32,19 @@ stdlib.h
 unistd.h
 -
 
+/Users/iruban/CLionProjects/filler/srcs/create_array.c
+../includes/filler.h
+/Users/iruban/CLionProjects/filler/includes/filler.h
+
+/Users/iruban/CLionProjects/filler/srcs/get_next_line.c
+../includes/get_next_line.h
+/Users/iruban/CLionProjects/filler/includes/get_next_line.h
+
 /Users/iruban/CLionProjects/filler/srcs/main.c
+../includes/filler.h
+/Users/iruban/CLionProjects/filler/includes/filler.h
+
+/Users/iruban/CLionProjects/filler/srcs/piece.c
 ../includes/filler.h
 /Users/iruban/CLionProjects/filler/includes/filler.h
 

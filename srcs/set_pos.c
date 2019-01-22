@@ -27,6 +27,29 @@ void	set_position(void)
 	}
 }
 
+void	set_enemy(void)
+{
+	if (g_cvars.friend == 'O')
+		g_cvars.enemy = 'X';
+	if (g_cvars.friend == 'X')
+		g_cvars.enemy = 'O';
+}
+
+
+void	set_me(void)
+{
+	char *line;
+
+	get_next_line(0, &line);
+	if (line[10] == '1')
+		g_cvars.friend = 'O';
+	else
+		g_cvars.friend = 'X';
+	free(line);
+	set_enemy();
+}
+
+
 bool 	place_piece(void)
 {
 	if (g_coords.enemy_y >= g_coords.friend_y && g_coords.enemy_x <= g_coords.friend_x) {
