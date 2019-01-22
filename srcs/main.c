@@ -83,7 +83,8 @@ int main(void)
 	while (game)
 	{
 		set_map();
-		place_piece();
+		if (place_piece() == false)
+			game = false;
 		print();
 	}
 	free(g_map.map);
