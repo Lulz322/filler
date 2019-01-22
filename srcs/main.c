@@ -19,6 +19,7 @@ void set_piece(char *line)
 	{
 		get_next_line(0, &line);
 		g_token.token[i] = ft_strdup(line);
+		free(line);
 		i++;
 	}
 }
@@ -32,14 +33,17 @@ void	set_map(void)
 	get_next_line(0, &line);
 	g_map.y = ft_atoi(&line[8]);
 	g_map.x = ft_atoi(&line[11]);
+	free(line);
 	if (!g_map.map)
 		g_map.map = create_array();
 	get_next_line(0, &line);
+	free(line);
 	while (i <= g_map.y)
 	{
 		get_next_line(0, &line);
 		if (ft_isdigit(line[0]))
 			g_map.map[i] = ft_strdup(line + 4);
+		free(line);
 		i++;
 	}
 	set_piece(line);
@@ -64,6 +68,7 @@ void	set_me(void)
 		g_cvars.friend = 'O';
 	else
 		g_cvars.friend = 'X';
+	free(line);
 	set_enemy();
 }
 void print(void)
