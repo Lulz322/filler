@@ -12,72 +12,98 @@
 
 #include "../includes/get_next_line.h"
 
-void	check(char **s, int fd, char **line)
-{
-	int		i;
-	char	*tmp;
 
-	i = 0;
-	while (s[fd][i] != '\n' && s[fd][i] != '\0')
-		i++;
-	if (i == 0)
-		(*line) = ft_strdup("");
-	if (s[fd][i] == '\n')
-	{
-		*line = ft_strsub(s[fd], 0, i);
-		tmp = ft_strdup(s[fd] + i + 1);
-		free(s[fd]);
-		s[fd] = tmp;
-		if (s[fd][0] == '\0')
-			ft_strdel(&s[fd]);
-	}
-	else if (s[fd][i] == '\0')
-	{
-		*line = ft_strdup(s[fd]);
-		ft_strdel(&s[fd]);
-	}
+static void		ft_list_add_last(t_gnl **save, t_gnl *elem)
+{
+	t_gnl *list;
+
+	list = *save;
+	while (list->next != NULL)
+		list = list->next;
+	list->next = elem;
 }
 
-int		readlfile(int ret, char *buf, char **s, int fd)
+static t_gnl	*ft_create_list(int fd)
 {
-	char	*tmp;
+	t_gnl *list;
 
-	while ((ret = read(fd, buf, BUFF_SIZE)) > 0)
+	if (!(list = (t_gnl*)malloc(sizeof(*list))))
+		return (NULL);
+	list->fd = fd;
+	list->tempo = ft_strnew(0);
+	list->text = NULL;
+	list->next = NULL;
+	return (list);
+}
+
+static t_gnl	*ft_check_fd(t_gnl *save, int fd)
+{
+	t_gnl *tmp;
+	t_gnl *d_list;
+
+	tmp = NULL;
+	d_list = save;
+	while (d_list)
 	{
+		if (d_list->fd == fd)
+			return (d_list);
+		if (!(d_list->next))
+		{
+			tmp = ft_create_list(fd);
+			ft_list_add_last(&d_list, tmp);
+			return (tmp);
+		}
+		d_list = d_list->next;
+	}
+	return (NULL);
+}
+
+static int		ft_check(char *save, char **line)
+{
+	char	*fin;
+
+	if (!save)
+		return (0);
+	fin = ft_strchr(save, '\n');
+	if (fin != NULL)
+	{
+		*fin = '\0';
+		*line = ft_strdup(save);
+		ft_strncpy(save, &fin[1], ft_strlen(&fin[1]) + 1);
+		return (1);
+	}
+	else if (ft_strlen(save) > 0)
+	{
+		*line = ft_strdup(save);
+		*save = '\0';
+		return (1);
+	}
+	return (0);
+}
+
+int				get_next_line(const int fd, char **line)
+{
+	char			buf[BUFF_SIZE + 1];
+	static t_gnl	*save = NULL;
+	t_gnl			*tmp;
+	int				ret;
+
+	if (!(save))
+		save = ft_create_list(fd);
+	if (fd == -1 || line == NULL || BUFF_SIZE <= 0)
+		return (-1);
+	tmp = ft_check_fd(save, fd);
+	while (!(ft_strchr(tmp->tempo, '\n')))
+	{
+		ret = read(fd, buf, BUFF_SIZE);
+		if (ret == -1)
+			return (-1);
+		if (ret == 0)
+			return (ft_check(tmp->text, line));
 		buf[ret] = '\0';
-		if (s[fd] == NULL)
-			s[fd] = ft_strnew(1);
-		tmp = ft_strjoin(s[fd], buf);
-		free(s[fd]);
-		s[fd] = tmp;
-		if (ft_strchr(buf, '\n'))
-			break ;
+		tmp->text = ft_strjoin(tmp->tempo, buf);
+		free(tmp->tempo);
+		tmp->tempo = tmp->text;
 	}
-	return (ret);
-}
-
-int		get_next_line(const int fd, char **line)
-{
-	static char	*s[255];
-	char		buf[BUFF_SIZE + 1];
-	int			ret;
-
-	if (fd < 0 || line == NULL)
-		return (-1);
-	ret = 0;
-	ret = readlfile(ret, buf, s, fd);
-	if (ret == -1)
-		return (-1);
-	if (s[fd] == NULL)
-	{
-		*line = NULL;
-		return (0);
-	}
-	if ((ret == 0 && s[fd][0] == '\0'))
-	{
-		*line = NULL;
-		return (0);
-	}
-	check(s, fd, line);
-	return (1);
+	return (ft_check(tmp->text, line));
 }

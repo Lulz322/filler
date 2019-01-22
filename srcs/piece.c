@@ -7,10 +7,10 @@ bool	check_place(int i, int j)
 {
 	int y;
 	int x;
-	bool answer;
+	int answer;
 
 	y = 0;
-	answer = false;
+	answer = 0;
 	while (y < g_token.y)
 	{
 		x = 0;
@@ -19,7 +19,7 @@ bool	check_place(int i, int j)
 			if ((g_map.map[i + y][j + x] == g_cvars.friend ||
 				 g_map.map[i + y][j + x] == g_cvars.friend + 32)
 				&& g_token.token[y][x] == '*')
-				answer = true;
+				answer++;
 			if ((g_map.map[i + y][j + x] == g_cvars.enemy ||
 				 g_map.map[i + y][j + x] == g_cvars.enemy + 32)
 				&& g_token.token[y][x] == '*')
@@ -28,15 +28,13 @@ bool	check_place(int i, int j)
 		}
 		y++;
 	}
-	return (answer);
+	return ((answer == 1) ? true : false);
 }
 
 
 bool	try_set_piece(int i, int j)
 {
-	if (i + g_token.y > g_map.y)
-		return (false);
-	else if (j + g_token.x > g_map.x)
+	if (i + g_token.y > g_map.y || j + g_token.x > g_map.x)
 		return (false);
 	else
 		return (check_place(i , j));
@@ -73,8 +71,8 @@ bool	try_right_upside(void)
 	y = 0;
 	while (y < g_map.y)
 	{
-		x = g_map.x + 1;
-		while (--x)
+		x = g_map.x;
+		while (x)
 		{
 			if (try_set_piece(y, x) == true)
 			{
@@ -82,6 +80,7 @@ bool	try_right_upside(void)
 				g_answer.y_answer = y;
 				return (true);
 			}
+			x--;
 		}
 		y++;
 	}

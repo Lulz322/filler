@@ -1,7 +1,7 @@
 #include "../includes/filler.h"
 
 
-int set_piece(char *line)
+void set_piece(char *line)
 {
 	int		n;
 	int		i;
@@ -21,7 +21,6 @@ int set_piece(char *line)
 		g_token.token[i] = ft_strdup(line);
 		i++;
 	}
-	return (0);
 }
 
 void	set_map(void)
@@ -44,8 +43,7 @@ void	set_map(void)
 		i++;
 	}
 	set_piece(line);
-	if (g_coords.enemy_x == 0 && g_coords.enemy_y == 0 && g_coords.friend_y == 0 && g_coords.friend_x == 0)
-		set_position();
+	set_position();
 }
 
 void	set_enemy(void)
@@ -70,11 +68,10 @@ void	set_me(void)
 }
 void print(void)
 {
-	printf("%d %d\n", g_answer.y_answer, g_answer.x_answer);
-	/*ft_putnbr(g_answer.y_answer);
+	ft_putnbr(g_answer.y_answer);
 	ft_putchar(' ');
 	ft_putnbr(g_answer.x_answer);
-	ft_putchar('\n');*/
+	ft_putchar('\n');
 }
 
 int main(void)
@@ -86,8 +83,7 @@ int main(void)
 	while (game)
 	{
 		set_map();
-		if (place_piece() == false)
-			return false;
+		place_piece();
 		print();
 	}
 	free(g_map.map);

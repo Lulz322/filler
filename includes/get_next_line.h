@@ -15,5 +15,14 @@
 # define BUFF_SIZE 255
 #include "filler.h"
 
+typedef struct		s_gnl
+{
+	char			*text;
+	char			*tempo;
+	struct s_gnl	*next;
+	int				fd;
+}					t_gnl;
+
+
 int	get_next_line(const int fd, char **line);
 #endif

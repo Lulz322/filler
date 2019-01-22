@@ -64,7 +64,7 @@ t_answer g_answer;
 
 char	**create_array(void);
 void	set_position(void);
-int	set_piece(char *line);
+void	set_piece(char *line);
 bool	try_right_downside(void);
 bool	try_left_downside(void);
 bool	try_right_upside(void);
