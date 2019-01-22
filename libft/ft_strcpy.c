@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../Desktop/iruban2/libft.h"
+#include "includes/libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {
