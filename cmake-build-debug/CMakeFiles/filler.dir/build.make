@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/iruban/CLionProjects/filler
+CMAKE_SOURCE_DIR = /home/bender/CLionProjects/filler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/iruban/CLionProjects/filler/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bender/CLionProjects/filler/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/filler.dir/depend.make
@@ -59,380 +59,380 @@ include CMakeFiles/filler.dir/flags.make
 
 CMakeFiles/filler.dir/libft/ft_atoi.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filler.dir/libft/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_atoi.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/filler.dir/libft/ft_atoi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_atoi.c.o   -c /home/bender/CLionProjects/filler/libft/ft_atoi.c
 
 CMakeFiles/filler.dir/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_atoi.c > CMakeFiles/filler.dir/libft/ft_atoi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_atoi.c > CMakeFiles/filler.dir/libft/ft_atoi.c.i
 
 CMakeFiles/filler.dir/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_atoi.c -o CMakeFiles/filler.dir/libft/ft_atoi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_atoi.c -o CMakeFiles/filler.dir/libft/ft_atoi.c.s
 
 CMakeFiles/filler.dir/libft/ft_isalpha.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filler.dir/libft/ft_isalpha.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_isalpha.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/filler.dir/libft/ft_isalpha.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_isalpha.c.o   -c /home/bender/CLionProjects/filler/libft/ft_isalpha.c
 
 CMakeFiles/filler.dir/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_isalpha.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_isalpha.c > CMakeFiles/filler.dir/libft/ft_isalpha.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_isalpha.c > CMakeFiles/filler.dir/libft/ft_isalpha.c.i
 
 CMakeFiles/filler.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_isalpha.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_isalpha.c -o CMakeFiles/filler.dir/libft/ft_isalpha.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_isalpha.c -o CMakeFiles/filler.dir/libft/ft_isalpha.c.s
 
 CMakeFiles/filler.dir/libft/ft_isdigit.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/filler.dir/libft/ft_isdigit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_isdigit.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/filler.dir/libft/ft_isdigit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_isdigit.c.o   -c /home/bender/CLionProjects/filler/libft/ft_isdigit.c
 
 CMakeFiles/filler.dir/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_isdigit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_isdigit.c > CMakeFiles/filler.dir/libft/ft_isdigit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_isdigit.c > CMakeFiles/filler.dir/libft/ft_isdigit.c.i
 
 CMakeFiles/filler.dir/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_isdigit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_isdigit.c -o CMakeFiles/filler.dir/libft/ft_isdigit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_isdigit.c -o CMakeFiles/filler.dir/libft/ft_isdigit.c.s
 
 CMakeFiles/filler.dir/libft/ft_itoa.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/filler.dir/libft/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_itoa.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/filler.dir/libft/ft_itoa.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_itoa.c.o   -c /home/bender/CLionProjects/filler/libft/ft_itoa.c
 
 CMakeFiles/filler.dir/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_itoa.c > CMakeFiles/filler.dir/libft/ft_itoa.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_itoa.c > CMakeFiles/filler.dir/libft/ft_itoa.c.i
 
 CMakeFiles/filler.dir/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_itoa.c -o CMakeFiles/filler.dir/libft/ft_itoa.c.s
-
-CMakeFiles/filler.dir/libft/ft_memset.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/filler.dir/libft/ft_memset.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memset.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_memset.c
-
-CMakeFiles/filler.dir/libft/ft_memset.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_memset.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_memset.c > CMakeFiles/filler.dir/libft/ft_memset.c.i
-
-CMakeFiles/filler.dir/libft/ft_memset.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_memset.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_memset.c -o CMakeFiles/filler.dir/libft/ft_memset.c.s
-
-CMakeFiles/filler.dir/libft/ft_putchar.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/filler.dir/libft/ft_putchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putchar.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_putchar.c
-
-CMakeFiles/filler.dir/libft/ft_putchar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_putchar.c > CMakeFiles/filler.dir/libft/ft_putchar.c.i
-
-CMakeFiles/filler.dir/libft/ft_putchar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_putchar.c -o CMakeFiles/filler.dir/libft/ft_putchar.c.s
-
-CMakeFiles/filler.dir/libft/ft_putnbr.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/filler.dir/libft/ft_putnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putnbr.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_putnbr.c
-
-CMakeFiles/filler.dir/libft/ft_putnbr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_putnbr.c > CMakeFiles/filler.dir/libft/ft_putnbr.c.i
-
-CMakeFiles/filler.dir/libft/ft_putnbr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_putnbr.c -o CMakeFiles/filler.dir/libft/ft_putnbr.c.s
-
-CMakeFiles/filler.dir/libft/ft_putstr.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/filler.dir/libft/ft_putstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putstr.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_putstr.c
-
-CMakeFiles/filler.dir/libft/ft_putstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_putstr.c > CMakeFiles/filler.dir/libft/ft_putstr.c.i
-
-CMakeFiles/filler.dir/libft/ft_putstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_putstr.c -o CMakeFiles/filler.dir/libft/ft_putstr.c.s
-
-CMakeFiles/filler.dir/libft/ft_strcat.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/filler.dir/libft/ft_strcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcat.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strcat.c
-
-CMakeFiles/filler.dir/libft/ft_strcat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strcat.c > CMakeFiles/filler.dir/libft/ft_strcat.c.i
-
-CMakeFiles/filler.dir/libft/ft_strcat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strcat.c -o CMakeFiles/filler.dir/libft/ft_strcat.c.s
-
-CMakeFiles/filler.dir/libft/ft_strcmp.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/filler.dir/libft/ft_strcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcmp.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strcmp.c
-
-CMakeFiles/filler.dir/libft/ft_strcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strcmp.c > CMakeFiles/filler.dir/libft/ft_strcmp.c.i
-
-CMakeFiles/filler.dir/libft/ft_strcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strcmp.c -o CMakeFiles/filler.dir/libft/ft_strcmp.c.s
-
-CMakeFiles/filler.dir/libft/ft_strdel.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/filler.dir/libft/ft_strdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strdel.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strdel.c
-
-CMakeFiles/filler.dir/libft/ft_strdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strdel.c > CMakeFiles/filler.dir/libft/ft_strdel.c.i
-
-CMakeFiles/filler.dir/libft/ft_strdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strdel.c -o CMakeFiles/filler.dir/libft/ft_strdel.c.s
-
-CMakeFiles/filler.dir/libft/ft_strlen.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/filler.dir/libft/ft_strlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strlen.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strlen.c
-
-CMakeFiles/filler.dir/libft/ft_strlen.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strlen.c > CMakeFiles/filler.dir/libft/ft_strlen.c.i
-
-CMakeFiles/filler.dir/libft/ft_strlen.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strlen.c -o CMakeFiles/filler.dir/libft/ft_strlen.c.s
-
-CMakeFiles/filler.dir/libft/ft_strncat.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/filler.dir/libft/ft_strncat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strncat.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strncat.c
-
-CMakeFiles/filler.dir/libft/ft_strncat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strncat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strncat.c > CMakeFiles/filler.dir/libft/ft_strncat.c.i
-
-CMakeFiles/filler.dir/libft/ft_strncat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strncat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strncat.c -o CMakeFiles/filler.dir/libft/ft_strncat.c.s
-
-CMakeFiles/filler.dir/libft/ft_strnew.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/filler.dir/libft/ft_strnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strnew.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strnew.c
-
-CMakeFiles/filler.dir/libft/ft_strnew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strnew.c > CMakeFiles/filler.dir/libft/ft_strnew.c.i
-
-CMakeFiles/filler.dir/libft/ft_strnew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strnew.c -o CMakeFiles/filler.dir/libft/ft_strnew.c.s
-
-CMakeFiles/filler.dir/libft/ft_swap.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_swap.c.o: ../libft/ft_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/filler.dir/libft/ft_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_swap.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_swap.c
-
-CMakeFiles/filler.dir/libft/ft_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_swap.c > CMakeFiles/filler.dir/libft/ft_swap.c.i
-
-CMakeFiles/filler.dir/libft/ft_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_swap.c -o CMakeFiles/filler.dir/libft/ft_swap.c.s
-
-CMakeFiles/filler.dir/libft/ft_strsub.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/filler.dir/libft/ft_strsub.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strsub.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strsub.c
-
-CMakeFiles/filler.dir/libft/ft_strsub.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strsub.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strsub.c > CMakeFiles/filler.dir/libft/ft_strsub.c.i
-
-CMakeFiles/filler.dir/libft/ft_strsub.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strsub.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strsub.c -o CMakeFiles/filler.dir/libft/ft_strsub.c.s
-
-CMakeFiles/filler.dir/libft/ft_strjoin.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/filler.dir/libft/ft_strjoin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strjoin.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strjoin.c
-
-CMakeFiles/filler.dir/libft/ft_strjoin.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strjoin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strjoin.c > CMakeFiles/filler.dir/libft/ft_strjoin.c.i
-
-CMakeFiles/filler.dir/libft/ft_strjoin.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strjoin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strjoin.c -o CMakeFiles/filler.dir/libft/ft_strjoin.c.s
-
-CMakeFiles/filler.dir/libft/ft_strcpy.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/filler.dir/libft/ft_strcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcpy.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strcpy.c
-
-CMakeFiles/filler.dir/libft/ft_strcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strcpy.c > CMakeFiles/filler.dir/libft/ft_strcpy.c.i
-
-CMakeFiles/filler.dir/libft/ft_strcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strcpy.c -o CMakeFiles/filler.dir/libft/ft_strcpy.c.s
-
-CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_putstr_fd.c
-
-CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_putstr_fd.c > CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i
-
-CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_putstr_fd.c -o CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s
-
-CMakeFiles/filler.dir/libft/ft_strchr.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/filler.dir/libft/ft_strchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strchr.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strchr.c
-
-CMakeFiles/filler.dir/libft/ft_strchr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strchr.c > CMakeFiles/filler.dir/libft/ft_strchr.c.i
-
-CMakeFiles/filler.dir/libft/ft_strchr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strchr.c -o CMakeFiles/filler.dir/libft/ft_strchr.c.s
-
-CMakeFiles/filler.dir/libft/ft_memcpy.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/filler.dir/libft/ft_memcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memcpy.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_memcpy.c
-
-CMakeFiles/filler.dir/libft/ft_memcpy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_memcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_memcpy.c > CMakeFiles/filler.dir/libft/ft_memcpy.c.i
-
-CMakeFiles/filler.dir/libft/ft_memcpy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_memcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_memcpy.c -o CMakeFiles/filler.dir/libft/ft_memcpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_itoa.c -o CMakeFiles/filler.dir/libft/ft_itoa.c.s
 
 CMakeFiles/filler.dir/libft/ft_memcmp.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/filler.dir/libft/ft_memcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memcmp.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/filler.dir/libft/ft_memcmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memcmp.c.o   -c /home/bender/CLionProjects/filler/libft/ft_memcmp.c
 
 CMakeFiles/filler.dir/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_memcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_memcmp.c > CMakeFiles/filler.dir/libft/ft_memcmp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_memcmp.c > CMakeFiles/filler.dir/libft/ft_memcmp.c.i
 
 CMakeFiles/filler.dir/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_memcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_memcmp.c -o CMakeFiles/filler.dir/libft/ft_memcmp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_memcmp.c -o CMakeFiles/filler.dir/libft/ft_memcmp.c.s
+
+CMakeFiles/filler.dir/libft/ft_memcpy.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/filler.dir/libft/ft_memcpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memcpy.c.o   -c /home/bender/CLionProjects/filler/libft/ft_memcpy.c
+
+CMakeFiles/filler.dir/libft/ft_memcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_memcpy.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_memcpy.c > CMakeFiles/filler.dir/libft/ft_memcpy.c.i
+
+CMakeFiles/filler.dir/libft/ft_memcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_memcpy.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_memcpy.c -o CMakeFiles/filler.dir/libft/ft_memcpy.c.s
+
+CMakeFiles/filler.dir/libft/ft_memset.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/filler.dir/libft/ft_memset.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_memset.c.o   -c /home/bender/CLionProjects/filler/libft/ft_memset.c
+
+CMakeFiles/filler.dir/libft/ft_memset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_memset.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_memset.c > CMakeFiles/filler.dir/libft/ft_memset.c.i
+
+CMakeFiles/filler.dir/libft/ft_memset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_memset.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_memset.c -o CMakeFiles/filler.dir/libft/ft_memset.c.s
+
+CMakeFiles/filler.dir/libft/ft_putchar.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/filler.dir/libft/ft_putchar.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putchar.c.o   -c /home/bender/CLionProjects/filler/libft/ft_putchar.c
+
+CMakeFiles/filler.dir/libft/ft_putchar.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putchar.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_putchar.c > CMakeFiles/filler.dir/libft/ft_putchar.c.i
+
+CMakeFiles/filler.dir/libft/ft_putchar.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putchar.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_putchar.c -o CMakeFiles/filler.dir/libft/ft_putchar.c.s
+
+CMakeFiles/filler.dir/libft/ft_putnbr.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/filler.dir/libft/ft_putnbr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putnbr.c.o   -c /home/bender/CLionProjects/filler/libft/ft_putnbr.c
+
+CMakeFiles/filler.dir/libft/ft_putnbr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putnbr.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_putnbr.c > CMakeFiles/filler.dir/libft/ft_putnbr.c.i
+
+CMakeFiles/filler.dir/libft/ft_putnbr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putnbr.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_putnbr.c -o CMakeFiles/filler.dir/libft/ft_putnbr.c.s
+
+CMakeFiles/filler.dir/libft/ft_putstr.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/filler.dir/libft/ft_putstr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putstr.c.o   -c /home/bender/CLionProjects/filler/libft/ft_putstr.c
+
+CMakeFiles/filler.dir/libft/ft_putstr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putstr.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_putstr.c > CMakeFiles/filler.dir/libft/ft_putstr.c.i
+
+CMakeFiles/filler.dir/libft/ft_putstr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putstr.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_putstr.c -o CMakeFiles/filler.dir/libft/ft_putstr.c.s
+
+CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o   -c /home/bender/CLionProjects/filler/libft/ft_putstr_fd.c
+
+CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_putstr_fd.c > CMakeFiles/filler.dir/libft/ft_putstr_fd.c.i
+
+CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_putstr_fd.c -o CMakeFiles/filler.dir/libft/ft_putstr_fd.c.s
+
+CMakeFiles/filler.dir/libft/ft_strcat.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/filler.dir/libft/ft_strcat.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcat.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strcat.c
+
+CMakeFiles/filler.dir/libft/ft_strcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcat.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strcat.c > CMakeFiles/filler.dir/libft/ft_strcat.c.i
+
+CMakeFiles/filler.dir/libft/ft_strcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcat.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strcat.c -o CMakeFiles/filler.dir/libft/ft_strcat.c.s
+
+CMakeFiles/filler.dir/libft/ft_strchr.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/filler.dir/libft/ft_strchr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strchr.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strchr.c
+
+CMakeFiles/filler.dir/libft/ft_strchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strchr.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strchr.c > CMakeFiles/filler.dir/libft/ft_strchr.c.i
+
+CMakeFiles/filler.dir/libft/ft_strchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strchr.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strchr.c -o CMakeFiles/filler.dir/libft/ft_strchr.c.s
+
+CMakeFiles/filler.dir/libft/ft_strcmp.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/filler.dir/libft/ft_strcmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcmp.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strcmp.c
+
+CMakeFiles/filler.dir/libft/ft_strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcmp.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strcmp.c > CMakeFiles/filler.dir/libft/ft_strcmp.c.i
+
+CMakeFiles/filler.dir/libft/ft_strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcmp.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strcmp.c -o CMakeFiles/filler.dir/libft/ft_strcmp.c.s
+
+CMakeFiles/filler.dir/libft/ft_strcpy.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/filler.dir/libft/ft_strcpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strcpy.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strcpy.c
+
+CMakeFiles/filler.dir/libft/ft_strcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strcpy.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strcpy.c > CMakeFiles/filler.dir/libft/ft_strcpy.c.i
+
+CMakeFiles/filler.dir/libft/ft_strcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strcpy.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strcpy.c -o CMakeFiles/filler.dir/libft/ft_strcpy.c.s
+
+CMakeFiles/filler.dir/libft/ft_strdel.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/filler.dir/libft/ft_strdel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strdel.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strdel.c
+
+CMakeFiles/filler.dir/libft/ft_strdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strdel.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strdel.c > CMakeFiles/filler.dir/libft/ft_strdel.c.i
+
+CMakeFiles/filler.dir/libft/ft_strdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strdel.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strdel.c -o CMakeFiles/filler.dir/libft/ft_strdel.c.s
+
+CMakeFiles/filler.dir/libft/ft_strjoin.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/filler.dir/libft/ft_strjoin.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strjoin.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strjoin.c
+
+CMakeFiles/filler.dir/libft/ft_strjoin.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strjoin.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strjoin.c > CMakeFiles/filler.dir/libft/ft_strjoin.c.i
+
+CMakeFiles/filler.dir/libft/ft_strjoin.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strjoin.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strjoin.c -o CMakeFiles/filler.dir/libft/ft_strjoin.c.s
+
+CMakeFiles/filler.dir/libft/ft_strlen.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/filler.dir/libft/ft_strlen.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strlen.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strlen.c
+
+CMakeFiles/filler.dir/libft/ft_strlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strlen.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strlen.c > CMakeFiles/filler.dir/libft/ft_strlen.c.i
+
+CMakeFiles/filler.dir/libft/ft_strlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strlen.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strlen.c -o CMakeFiles/filler.dir/libft/ft_strlen.c.s
+
+CMakeFiles/filler.dir/libft/ft_strncat.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/filler.dir/libft/ft_strncat.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strncat.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strncat.c
+
+CMakeFiles/filler.dir/libft/ft_strncat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strncat.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strncat.c > CMakeFiles/filler.dir/libft/ft_strncat.c.i
+
+CMakeFiles/filler.dir/libft/ft_strncat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strncat.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strncat.c -o CMakeFiles/filler.dir/libft/ft_strncat.c.s
 
 CMakeFiles/filler.dir/libft/ft_strncpy.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/filler.dir/libft/ft_strncpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strncpy.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/filler.dir/libft/ft_strncpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strncpy.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strncpy.c
 
 CMakeFiles/filler.dir/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strncpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strncpy.c > CMakeFiles/filler.dir/libft/ft_strncpy.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strncpy.c > CMakeFiles/filler.dir/libft/ft_strncpy.c.i
 
 CMakeFiles/filler.dir/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strncpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strncpy.c -o CMakeFiles/filler.dir/libft/ft_strncpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strncpy.c -o CMakeFiles/filler.dir/libft/ft_strncpy.c.s
+
+CMakeFiles/filler.dir/libft/ft_strnew.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/filler.dir/libft/ft_strnew.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strnew.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strnew.c
+
+CMakeFiles/filler.dir/libft/ft_strnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strnew.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strnew.c > CMakeFiles/filler.dir/libft/ft_strnew.c.i
+
+CMakeFiles/filler.dir/libft/ft_strnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strnew.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strnew.c -o CMakeFiles/filler.dir/libft/ft_strnew.c.s
 
 CMakeFiles/filler.dir/libft/ft_strstr.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/filler.dir/libft/ft_strstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strstr.c.o   -c /Users/iruban/CLionProjects/filler/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/filler.dir/libft/ft_strstr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strstr.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strstr.c
 
 CMakeFiles/filler.dir/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/libft/ft_strstr.c > CMakeFiles/filler.dir/libft/ft_strstr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strstr.c > CMakeFiles/filler.dir/libft/ft_strstr.c.i
 
 CMakeFiles/filler.dir/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/libft/ft_strstr.c -o CMakeFiles/filler.dir/libft/ft_strstr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strstr.c -o CMakeFiles/filler.dir/libft/ft_strstr.c.s
 
-CMakeFiles/filler.dir/srcs/get_next_line.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/srcs/get_next_line.c.o: ../srcs/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/filler.dir/srcs/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/get_next_line.c.o   -c /Users/iruban/CLionProjects/filler/srcs/get_next_line.c
+CMakeFiles/filler.dir/libft/ft_strsub.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/filler.dir/libft/ft_strsub.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_strsub.c.o   -c /home/bender/CLionProjects/filler/libft/ft_strsub.c
 
-CMakeFiles/filler.dir/srcs/get_next_line.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/srcs/get_next_line.c > CMakeFiles/filler.dir/srcs/get_next_line.c.i
+CMakeFiles/filler.dir/libft/ft_strsub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_strsub.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_strsub.c > CMakeFiles/filler.dir/libft/ft_strsub.c.i
 
-CMakeFiles/filler.dir/srcs/get_next_line.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/srcs/get_next_line.c -o CMakeFiles/filler.dir/srcs/get_next_line.c.s
+CMakeFiles/filler.dir/libft/ft_strsub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_strsub.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_strsub.c -o CMakeFiles/filler.dir/libft/ft_strsub.c.s
 
-CMakeFiles/filler.dir/srcs/main.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/srcs/main.c.o: ../srcs/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/filler.dir/srcs/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/main.c.o   -c /Users/iruban/CLionProjects/filler/srcs/main.c
+CMakeFiles/filler.dir/libft/ft_swap.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/libft/ft_swap.c.o: ../libft/ft_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/filler.dir/libft/ft_swap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/libft/ft_swap.c.o   -c /home/bender/CLionProjects/filler/libft/ft_swap.c
 
-CMakeFiles/filler.dir/srcs/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/srcs/main.c > CMakeFiles/filler.dir/srcs/main.c.i
+CMakeFiles/filler.dir/libft/ft_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/libft/ft_swap.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/libft/ft_swap.c > CMakeFiles/filler.dir/libft/ft_swap.c.i
 
-CMakeFiles/filler.dir/srcs/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/srcs/main.c -o CMakeFiles/filler.dir/srcs/main.c.s
+CMakeFiles/filler.dir/libft/ft_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/libft/ft_swap.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/libft/ft_swap.c -o CMakeFiles/filler.dir/libft/ft_swap.c.s
 
 CMakeFiles/filler.dir/srcs/create_array.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/srcs/create_array.c.o: ../srcs/create_array.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/filler.dir/srcs/create_array.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/create_array.c.o   -c /Users/iruban/CLionProjects/filler/srcs/create_array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/filler.dir/srcs/create_array.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/create_array.c.o   -c /home/bender/CLionProjects/filler/srcs/create_array.c
 
 CMakeFiles/filler.dir/srcs/create_array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/create_array.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/srcs/create_array.c > CMakeFiles/filler.dir/srcs/create_array.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/create_array.c > CMakeFiles/filler.dir/srcs/create_array.c.i
 
 CMakeFiles/filler.dir/srcs/create_array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/create_array.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/srcs/create_array.c -o CMakeFiles/filler.dir/srcs/create_array.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/create_array.c -o CMakeFiles/filler.dir/srcs/create_array.c.s
 
-CMakeFiles/filler.dir/srcs/set_pos.c.o: CMakeFiles/filler.dir/flags.make
-CMakeFiles/filler.dir/srcs/set_pos.c.o: ../srcs/set_pos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/filler.dir/srcs/set_pos.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/set_pos.c.o   -c /Users/iruban/CLionProjects/filler/srcs/set_pos.c
+CMakeFiles/filler.dir/srcs/get_next_line.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/srcs/get_next_line.c.o: ../srcs/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/filler.dir/srcs/get_next_line.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/get_next_line.c.o   -c /home/bender/CLionProjects/filler/srcs/get_next_line.c
 
-CMakeFiles/filler.dir/srcs/set_pos.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/set_pos.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/srcs/set_pos.c > CMakeFiles/filler.dir/srcs/set_pos.c.i
+CMakeFiles/filler.dir/srcs/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/get_next_line.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/get_next_line.c > CMakeFiles/filler.dir/srcs/get_next_line.c.i
 
-CMakeFiles/filler.dir/srcs/set_pos.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/set_pos.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/srcs/set_pos.c -o CMakeFiles/filler.dir/srcs/set_pos.c.s
+CMakeFiles/filler.dir/srcs/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/get_next_line.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/get_next_line.c -o CMakeFiles/filler.dir/srcs/get_next_line.c.s
+
+CMakeFiles/filler.dir/srcs/main.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/srcs/main.c.o: ../srcs/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/filler.dir/srcs/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/main.c.o   -c /home/bender/CLionProjects/filler/srcs/main.c
+
+CMakeFiles/filler.dir/srcs/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/main.c > CMakeFiles/filler.dir/srcs/main.c.i
+
+CMakeFiles/filler.dir/srcs/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/main.c -o CMakeFiles/filler.dir/srcs/main.c.s
 
 CMakeFiles/filler.dir/srcs/piece.c.o: CMakeFiles/filler.dir/flags.make
 CMakeFiles/filler.dir/srcs/piece.c.o: ../srcs/piece.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/filler.dir/srcs/piece.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/piece.c.o   -c /Users/iruban/CLionProjects/filler/srcs/piece.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/filler.dir/srcs/piece.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/piece.c.o   -c /home/bender/CLionProjects/filler/srcs/piece.c
 
 CMakeFiles/filler.dir/srcs/piece.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/piece.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/iruban/CLionProjects/filler/srcs/piece.c > CMakeFiles/filler.dir/srcs/piece.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/piece.c > CMakeFiles/filler.dir/srcs/piece.c.i
 
 CMakeFiles/filler.dir/srcs/piece.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/piece.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/iruban/CLionProjects/filler/srcs/piece.c -o CMakeFiles/filler.dir/srcs/piece.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/piece.c -o CMakeFiles/filler.dir/srcs/piece.c.s
+
+CMakeFiles/filler.dir/srcs/set_pos.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/srcs/set_pos.c.o: ../srcs/set_pos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/filler.dir/srcs/set_pos.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/srcs/set_pos.c.o   -c /home/bender/CLionProjects/filler/srcs/set_pos.c
+
+CMakeFiles/filler.dir/srcs/set_pos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/srcs/set_pos.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bender/CLionProjects/filler/srcs/set_pos.c > CMakeFiles/filler.dir/srcs/set_pos.c.i
+
+CMakeFiles/filler.dir/srcs/set_pos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/srcs/set_pos.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bender/CLionProjects/filler/srcs/set_pos.c -o CMakeFiles/filler.dir/srcs/set_pos.c.s
 
 # Object files for target filler
 filler_OBJECTS = \
@@ -440,31 +440,31 @@ filler_OBJECTS = \
 "CMakeFiles/filler.dir/libft/ft_isalpha.c.o" \
 "CMakeFiles/filler.dir/libft/ft_isdigit.c.o" \
 "CMakeFiles/filler.dir/libft/ft_itoa.c.o" \
+"CMakeFiles/filler.dir/libft/ft_memcmp.c.o" \
+"CMakeFiles/filler.dir/libft/ft_memcpy.c.o" \
 "CMakeFiles/filler.dir/libft/ft_memset.c.o" \
 "CMakeFiles/filler.dir/libft/ft_putchar.c.o" \
 "CMakeFiles/filler.dir/libft/ft_putnbr.c.o" \
 "CMakeFiles/filler.dir/libft/ft_putstr.c.o" \
+"CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strcat.c.o" \
+"CMakeFiles/filler.dir/libft/ft_strchr.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strcmp.c.o" \
+"CMakeFiles/filler.dir/libft/ft_strcpy.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strdel.c.o" \
+"CMakeFiles/filler.dir/libft/ft_strjoin.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strncat.c.o" \
-"CMakeFiles/filler.dir/libft/ft_strnew.c.o" \
-"CMakeFiles/filler.dir/libft/ft_swap.c.o" \
-"CMakeFiles/filler.dir/libft/ft_strsub.c.o" \
-"CMakeFiles/filler.dir/libft/ft_strjoin.c.o" \
-"CMakeFiles/filler.dir/libft/ft_strcpy.c.o" \
-"CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o" \
-"CMakeFiles/filler.dir/libft/ft_strchr.c.o" \
-"CMakeFiles/filler.dir/libft/ft_memcpy.c.o" \
-"CMakeFiles/filler.dir/libft/ft_memcmp.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strncpy.c.o" \
+"CMakeFiles/filler.dir/libft/ft_strnew.c.o" \
 "CMakeFiles/filler.dir/libft/ft_strstr.c.o" \
+"CMakeFiles/filler.dir/libft/ft_strsub.c.o" \
+"CMakeFiles/filler.dir/libft/ft_swap.c.o" \
+"CMakeFiles/filler.dir/srcs/create_array.c.o" \
 "CMakeFiles/filler.dir/srcs/get_next_line.c.o" \
 "CMakeFiles/filler.dir/srcs/main.c.o" \
-"CMakeFiles/filler.dir/srcs/create_array.c.o" \
-"CMakeFiles/filler.dir/srcs/set_pos.c.o" \
-"CMakeFiles/filler.dir/srcs/piece.c.o"
+"CMakeFiles/filler.dir/srcs/piece.c.o" \
+"CMakeFiles/filler.dir/srcs/set_pos.c.o"
 
 # External object files for target filler
 filler_EXTERNAL_OBJECTS =
@@ -473,34 +473,34 @@ filler: CMakeFiles/filler.dir/libft/ft_atoi.c.o
 filler: CMakeFiles/filler.dir/libft/ft_isalpha.c.o
 filler: CMakeFiles/filler.dir/libft/ft_isdigit.c.o
 filler: CMakeFiles/filler.dir/libft/ft_itoa.c.o
+filler: CMakeFiles/filler.dir/libft/ft_memcmp.c.o
+filler: CMakeFiles/filler.dir/libft/ft_memcpy.c.o
 filler: CMakeFiles/filler.dir/libft/ft_memset.c.o
 filler: CMakeFiles/filler.dir/libft/ft_putchar.c.o
 filler: CMakeFiles/filler.dir/libft/ft_putnbr.c.o
 filler: CMakeFiles/filler.dir/libft/ft_putstr.c.o
+filler: CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strcat.c.o
+filler: CMakeFiles/filler.dir/libft/ft_strchr.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strcmp.c.o
+filler: CMakeFiles/filler.dir/libft/ft_strcpy.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strdel.c.o
+filler: CMakeFiles/filler.dir/libft/ft_strjoin.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strlen.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strncat.c.o
-filler: CMakeFiles/filler.dir/libft/ft_strnew.c.o
-filler: CMakeFiles/filler.dir/libft/ft_swap.c.o
-filler: CMakeFiles/filler.dir/libft/ft_strsub.c.o
-filler: CMakeFiles/filler.dir/libft/ft_strjoin.c.o
-filler: CMakeFiles/filler.dir/libft/ft_strcpy.c.o
-filler: CMakeFiles/filler.dir/libft/ft_putstr_fd.c.o
-filler: CMakeFiles/filler.dir/libft/ft_strchr.c.o
-filler: CMakeFiles/filler.dir/libft/ft_memcpy.c.o
-filler: CMakeFiles/filler.dir/libft/ft_memcmp.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strncpy.c.o
+filler: CMakeFiles/filler.dir/libft/ft_strnew.c.o
 filler: CMakeFiles/filler.dir/libft/ft_strstr.c.o
+filler: CMakeFiles/filler.dir/libft/ft_strsub.c.o
+filler: CMakeFiles/filler.dir/libft/ft_swap.c.o
+filler: CMakeFiles/filler.dir/srcs/create_array.c.o
 filler: CMakeFiles/filler.dir/srcs/get_next_line.c.o
 filler: CMakeFiles/filler.dir/srcs/main.c.o
-filler: CMakeFiles/filler.dir/srcs/create_array.c.o
-filler: CMakeFiles/filler.dir/srcs/set_pos.c.o
 filler: CMakeFiles/filler.dir/srcs/piece.c.o
+filler: CMakeFiles/filler.dir/srcs/set_pos.c.o
 filler: CMakeFiles/filler.dir/build.make
 filler: CMakeFiles/filler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking C executable filler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking C executable filler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -513,6 +513,6 @@ CMakeFiles/filler.dir/clean:
 .PHONY : CMakeFiles/filler.dir/clean
 
 CMakeFiles/filler.dir/depend:
-	cd /Users/iruban/CLionProjects/filler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/iruban/CLionProjects/filler /Users/iruban/CLionProjects/filler /Users/iruban/CLionProjects/filler/cmake-build-debug /Users/iruban/CLionProjects/filler/cmake-build-debug /Users/iruban/CLionProjects/filler/cmake-build-debug/CMakeFiles/filler.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bender/CLionProjects/filler/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bender/CLionProjects/filler /home/bender/CLionProjects/filler /home/bender/CLionProjects/filler/cmake-build-debug /home/bender/CLionProjects/filler/cmake-build-debug /home/bender/CLionProjects/filler/cmake-build-debug/CMakeFiles/filler.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/filler.dir/depend
 
