@@ -3,33 +3,26 @@
 char **create_array(void)
 {
 	char **tmp;
-	char *line;
 	int i;
 
 	i = 0;
 	tmp = (char **)malloc(sizeof(char *) * g_map.y);
-	line = (char *)malloc(sizeof(char) * g_map.x * g_map.y);
 	while (i < g_map.y)
 	{
-		tmp[i] = &line[i * g_map.x];
+		tmp[i] = (char *)malloc(sizeof(char) * g_map.x * g_map.y);
 		i++;
 	}
 	return (tmp);
 }
 
-char **create_array_token(void)
+void    free_array(int counter, char **array)
 {
-	char **tmp;
-	char *line;
 	int i;
 
 	i = 0;
-	tmp = (char **)malloc(sizeof(char *) * g_token.y);
-	line = (char *)malloc(sizeof(char) * g_token.x * g_token.y);
-	while (i < g_token.y)
+	while (i < counter)
 	{
-		tmp[i] = &line[i * g_token.x];
-		i++;
+		free(array[i++]);
 	}
-	return (tmp);
+	free(array);
 }

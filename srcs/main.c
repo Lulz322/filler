@@ -8,13 +8,14 @@ bool	try_set_piece(int i, int j)
 		return (check_place(i , j));
 }
 
-void set_piece(char *line)
+void set_piece(void)
 {
 	int		n;
 	int		i;
-
+	char    *line;
 	n = 6;
 	i = 0;
+	get_next_line(0, &line);
 	g_token.y = ft_atoi(&line[6]);
 	while (ft_isdigit(line[n]))
 		n++;
@@ -22,10 +23,12 @@ void set_piece(char *line)
 	g_token.x = ft_atoi(&line[n]);
 	if (!g_token.token)
 		g_token.token = create_array();
+	free(line);
 	while (i < g_token.y)
 	{
 		get_next_line(0, &line);
 		g_token.token[i] = ft_strdup(line);
+		free(line);
 		i++;
 	}
 }
@@ -41,15 +44,17 @@ void	set_map(void)
 	g_map.x = ft_atoi(&line[11]);
 	if (!g_map.map)
 		g_map.map = create_array();
+	free(line);
 	get_next_line(0, &line);
-	while (i <= g_map.y)
+	free(line);
+	while (i < g_map.y)
 	{
 		get_next_line(0, &line);
-		if (ft_isdigit(line[0]))
-			g_map.map[i] = ft_strdup(line + 4);
+		g_map.map[i] = ft_strdup(line + 4);
+		free(line);
 		i++;
 	}
-	set_piece(line);
+	set_piece();
 	set_position();
 }
 
@@ -75,9 +80,7 @@ int main(void)
 			game = false;
 		print();
 	}
-	//free(g_map.map);
-	//
-	// free(g_token.token);
+	free_array(g_map.y, g_map.map);
+	free_array(g_map.y, g_token.token);
 	return (0);
-
 }

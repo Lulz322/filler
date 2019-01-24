@@ -12,30 +12,6 @@
 
 #include "../includes/get_next_line.h"
 
-
-static void		ft_list_add_last(t_gnl **save, t_gnl *elem)
-{
-	t_gnl *list;
-
-	list = *save;
-	while (list->next != NULL)
-		list = list->next;
-	list->next = elem;
-}
-
-static t_gnl	*ft_create_list(int fd)
-{
-	t_gnl *list;
-
-	if (!(list = (t_gnl*)malloc(sizeof(*list))))
-		return (NULL);
-	list->fd = fd;
-	list->tempo = ft_strnew(0);
-	list->text = NULL;
-	list->next = NULL;
-	return (list);
-}
-
 static t_gnl	*ft_check_fd(t_gnl *save, int fd)
 {
 	t_gnl *tmp;

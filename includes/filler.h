@@ -64,13 +64,14 @@ t_answer g_answer;
 
 char	**create_array(void);
 void	set_position(void);
-void	set_piece(char *line);
+void	set_piece();
 bool	try_right_downside(void);
 bool	try_left_downside(void);
 bool	try_right_upside(void);
 bool	try_left_upside(void);
 bool 	place_piece(void);
 void	set_me(void);
+void    free_array(int counter, char **qwe);
 bool	try_set_piece(int i, int j);
 bool	check_place(int i, int j);
 #endif

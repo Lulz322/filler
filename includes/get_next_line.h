@@ -25,4 +25,6 @@ typedef struct		s_gnl
 
 
 int	get_next_line(const int fd, char **line);
+void		ft_list_add_last(t_gnl **save, t_gnl *elem);
+t_gnl	*ft_create_list(int fd);
 #endif
