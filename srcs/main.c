@@ -27,7 +27,7 @@ void set_piece(void)
 	while (i < g_token.y)
 	{
 		get_next_line(0, &line);
-		g_token.token[i] = ft_strdup(line);
+		ft_strcpy(g_token.token[i], line);
 		free(line);
 		i++;
 	}
@@ -50,12 +50,17 @@ void	set_map(void)
 	while (i < g_map.y)
 	{
 		get_next_line(0, &line);
-		g_map.map[i] = ft_strdup(line + 4);
+		ft_strcpy(g_map.map[i], line + 4);
 		free(line);
 		i++;
 	}
 	set_piece();
-	set_position();
+	//g_coords.friend_x = 2;
+	//g_coords.friend_y = 8;
+	if (g_coords.enemy_x == 0 && g_coords.enemy_y == 0 && g_coords.friend_x == 0 && g_coords.friend_y == 0)
+		set_position();
+	else
+		set_position_two();
 }
 
 
@@ -65,6 +70,8 @@ void print(void)
 	ft_putchar(' ');
 	ft_putnbr(g_answer.x_answer);
 	ft_putchar('\n');
+	g_coords.friend_y = g_answer.y_answer;
+	g_coords.friend_x = g_answer.x_answer;
 }
 
 int main(void)

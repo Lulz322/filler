@@ -73,5 +73,6 @@ bool 	place_piece(void);
 void	set_me(void);
 void    free_array(int counter, char **qwe);
 bool	try_set_piece(int i, int j);
+void	set_position_two(void);
 bool	check_place(int i, int j);
 #endif

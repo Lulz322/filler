@@ -2,7 +2,7 @@ NAME = iruban.filler
 
 
 CC = gcc
-@CFLAGS = -Wall -Wextra -Werror
+@CFLAGS = -Wall -Wextra -Werror -g3 -O0
 
 SRC = srcs/get_next_line.c srcs/main.c srcs/create_array.c srcs/set_pos.c srcs/piece.c
 
