@@ -1,5 +1,16 @@
-#include "../includes/filler.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   set_pos.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/25 15:53:15 by iruban            #+#    #+#             */
+/*   Updated: 2019/01/25 15:53:17 by iruban           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "../includes/filler.h"
 
 void	set_position_two(void)
 {
@@ -22,7 +33,6 @@ void	set_position_two(void)
 		i++;
 	}
 }
-
 
 void	set_position(void)
 {
@@ -59,7 +69,6 @@ void	set_enemy(void)
 		g_cvars.enemy = 'O';
 }
 
-
 void	set_me(void)
 {
 	char *line;
@@ -73,38 +82,28 @@ void	set_me(void)
 	set_enemy();
 }
 
-
-bool 	place_piece(void)
+bool	place_piece(void)
 {
-	/*ft_putchar('\n');
-	ft_putstr("ENEMY Y : ");
-	ft_putnbr(g_coords.enemy_y);
-	ft_putchar('\n');
-	ft_putstr("ENEMY X : ");
-	ft_putnbr(g_coords.enemy_x);
-	ft_putchar('\n');
-	ft_putstr("FRIEND Y : ");
-	ft_putnbr(g_coords.friend_y);
-	ft_putchar('\n');
-	ft_putstr("FRIEND X : ");
-	ft_putnbr(g_coords.friend_x);
-	ft_putchar('\n');*/
-	if (g_coords.enemy_y > g_coords.friend_y && g_coords.enemy_x >= g_coords.friend_x)
+	if (g_coords.enemy_y > g_coords.friend_y &&
+		g_coords.enemy_x >= g_coords.friend_x)
 	{
 		if (try_right_downside() == true)
 			return (true);
 	}
-	else if (g_coords.enemy_y < g_coords.friend_y && g_coords.enemy_x <= g_coords.friend_x)
+	else if (g_coords.enemy_y < g_coords.friend_y &&
+		g_coords.enemy_x <= g_coords.friend_x)
 	{
-			if (try_left_upside() == true)
-				return (true);
+		if (try_left_upside() == true)
+			return (true);
 	}
-	else if (g_coords.enemy_y <= g_coords.friend_y && g_coords.enemy_x >= g_coords.friend_x)
+	else if (g_coords.enemy_y <= g_coords.friend_y &&
+		g_coords.enemy_x >= g_coords.friend_x)
 	{
 		if (try_right_upside() == true)
 			return (true);
 	}
-	else if (g_coords.enemy_y >= g_coords.friend_y && g_coords.enemy_x <= g_coords.friend_x)
+	else if (g_coords.enemy_y >= g_coords.friend_y &&
+		g_coords.enemy_x <= g_coords.friend_x)
 	{
 		if (try_left_downside() == true)
 			return (true);

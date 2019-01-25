@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/25 15:53:05 by iruban            #+#    #+#             */
+/*   Updated: 2019/01/25 15:53:06 by iruban           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/filler.h"
 
 bool	try_set_piece(int i, int j)
@@ -5,14 +17,15 @@ bool	try_set_piece(int i, int j)
 	if (i + g_token.y > g_map.y || j + g_token.x > g_map.x)
 		return (false);
 	else
-		return (check_place(i , j));
+		return (check_place(i, j));
 }
 
-void set_piece(void)
+void	set_piece(void)
 {
 	int		n;
 	int		i;
-	char    *line;
+	char	*line;
+
 	n = 6;
 	i = 0;
 	get_next_line(0, &line);
@@ -35,8 +48,8 @@ void set_piece(void)
 
 void	set_map(void)
 {
-	int i;
-	char *line;
+	int		i;
+	char	*line;
 
 	i = 0;
 	get_next_line(0, &line);
@@ -55,16 +68,13 @@ void	set_map(void)
 		i++;
 	}
 	set_piece();
-	//g_coords.friend_x = 2;
-	//g_coords.friend_y = 8;
-	if (g_coords.enemy_x == 0 && g_coords.enemy_y == 0 && g_coords.friend_x == 0 && g_coords.friend_y == 0)
+	if (g_coords.friend_x == 0 && g_coords.friend_y == 0)
 		set_position();
 	else
 		set_position_two();
 }
 
-
-void print(void)
+void	print(void)
 {
 	ft_putnbr(g_answer.y_answer);
 	ft_putchar(' ');
@@ -74,7 +84,7 @@ void print(void)
 	g_coords.friend_x = g_answer.x_answer;
 }
 
-int main(void)
+int		main(void)
 {
 	bool game;
 

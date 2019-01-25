@@ -1,6 +1,15 @@
-//
-// Created by Ihor RUBAN on 2019-01-21.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   piece.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/01/25 15:53:10 by iruban            #+#    #+#             */
+/*   Updated: 2019/01/25 15:53:11 by iruban           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/filler.h"
 
 bool	check_place(int i, int j)
@@ -17,11 +26,11 @@ bool	check_place(int i, int j)
 		while (x < g_token.x)
 		{
 			if ((g_map.map[i + y][j + x] == g_cvars.friend ||
-				 g_map.map[i + y][j + x] == g_cvars.friend + 32)
+				g_map.map[i + y][j + x] == g_cvars.friend + 32)
 				&& g_token.token[y][x] == '*')
 				answer++;
 			if ((g_map.map[i + y][j + x] == g_cvars.enemy ||
-				 g_map.map[i + y][j + x] == g_cvars.enemy + 32)
+				g_map.map[i + y][j + x] == g_cvars.enemy + 32)
 				&& g_token.token[y][x] == '*')
 				return (false);
 			x++;
