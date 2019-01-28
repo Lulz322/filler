@@ -13,7 +13,8 @@
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 # define BUFF_SIZE 255
-#include "filler.h"
+
+# include "filler.h"
 
 typedef struct		s_gnl
 {
@@ -23,8 +24,7 @@ typedef struct		s_gnl
 	int				fd;
 }					t_gnl;
 
-
-int	get_next_line(const int fd, char **line);
-void		ft_list_add_last(t_gnl **save, t_gnl *elem);
-t_gnl	*ft_create_list(int fd);
+int					get_next_line(const int fd, char **line);
+void				ft_list_add_last(t_gnl **save, t_gnl *elem);
+t_gnl				*ft_create_list(int fd);
 #endif
