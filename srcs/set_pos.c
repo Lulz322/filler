@@ -84,19 +84,13 @@ void	set_me(void)
 
 bool	place_piece(void)
 {
-	if (g_coords.enemy_y > g_coords.friend_y &&
-		g_coords.enemy_x >= g_coords.friend_x)
-	{
-		if (try_right_downside() == true)
-			return (true);
-	}
-	else if (g_coords.enemy_y < g_coords.friend_y &&
+	if (g_coords.enemy_y < g_coords.friend_y &&
 		g_coords.enemy_x <= g_coords.friend_x)
 	{
 		if (try_left_upside() == true)
 			return (true);
 	}
-	else if (g_coords.enemy_y <= g_coords.friend_y &&
+	else if (g_coords.enemy_y - 4 <= g_coords.friend_y &&
 		g_coords.enemy_x >= g_coords.friend_x)
 	{
 		if (try_right_upside() == true)
@@ -106,6 +100,12 @@ bool	place_piece(void)
 		g_coords.enemy_x <= g_coords.friend_x)
 	{
 		if (try_left_downside() == true)
+			return (true);
+	}
+	else if (g_coords.enemy_y > g_coords.friend_y &&
+		g_coords.enemy_x >= g_coords.friend_x)
+	{
+		if (try_right_downside() == true)
 			return (true);
 	}
 	return (false);

@@ -72,6 +72,11 @@ CMakeFiles/filler.dir/libft/ft_strsub.c.o
 CMakeFiles/filler.dir/libft/ft_swap.c.o
  ../libft/includes/libft.h
  /Users/iruban/CLionProjects/filler/libft/ft_swap.c
+CMakeFiles/filler.dir/libft/lst_gnl.c.o
+ /Users/iruban/CLionProjects/filler/includes/filler.h
+ /Users/iruban/CLionProjects/filler/includes/get_next_line.h
+ /Users/iruban/CLionProjects/filler/libft/includes/libft.h
+ /Users/iruban/CLionProjects/filler/libft/lst_gnl.c
 CMakeFiles/filler.dir/srcs/create_array.c.o
  /Users/iruban/CLionProjects/filler/includes/filler.h
  /Users/iruban/CLionProjects/filler/includes/get_next_line.h

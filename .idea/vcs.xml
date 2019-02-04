@@ -4,6 +4,8 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/42-filler" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gnl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/tester" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/tester" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yoyoyo" vcs="Git" />
   </component>
 </project>

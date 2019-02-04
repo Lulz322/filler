@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/23 15:31:39 by iruban            #+#    #+#             */
-/*   Updated: 2018/11/22 11:29:57 by ybuhai           ###   ########.fr       */
+/*   Created: 2019/02/04 13:09:17 by iruban            #+#    #+#             */
+/*   Updated: 2019/02/04 13:09:25 by iruban           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,6 @@
 # include <unistd.h>
 
 # define _ERR_NOTIS(ex) if (!(ex)) return NULL;
-
-typedef struct	s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}				t_list;
 
 int				get_next_line(const int fd, char **line);
 int				ft_sqrt(int nb);
@@ -47,9 +40,9 @@ char			*ft_strrchr(const char *s, int c);
 char			*ft_strstr(const char *haystack,
 				const char *needle);
 char			*ft_strnstr(const char *haystack, const char *needle,
-				size_t len);
+							size_t len);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
-long long				ft_atoi(const char *str);
+long long		ft_atoi(const char *str);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
@@ -74,24 +67,18 @@ char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(long long n);
 char			*ft_uitoa(unsigned long long n);
-void        ft_revputstr(const char *str);
-char	*ft_strcat(char *restrict s1, const char *restrict s2);
-char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
+void			ft_revputstr(const char *str);
+char			*ft_strcat(char *restrict s1, const char *restrict s2);
+char			*ft_strncat(char *restrict a, const char *restrict s, size_t n);
 void			ft_putendl(char const *s);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putnbr_fd(int n, int fd);
-char			*ft_strncpy(char *dst, const char *src, size_t len);
 void			ft_putnbr(long long n);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
-t_list			*ft_lstnew(void const *content, size_t content_size);
-void			ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
-void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-int        ft_strchri_lu(char *s, int c, int i);
-int        ft_strchri(char *s, int c, int i);
-size_t        ft_wstrlen(unsigned *s);
-size_t    ft_wcharlen(unsigned wc);
-int		len(long long  nb);
+int				ft_strchri_lu(char *s, int c, int i);
+int				ft_strchri(char *s, int c, int i);
+size_t			ft_wstrlen(unsigned *s);
+size_t			ft_wcharlen(unsigned wc);
+int				len(long long nb);
 #endif

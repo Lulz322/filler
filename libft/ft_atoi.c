@@ -14,7 +14,7 @@
 
 static		int		skip_whitespaces(const char *str)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while ((str[i] >= 9 && str[i] <= 13) ||
@@ -35,9 +35,9 @@ static		void	check_sign(const char *str, int *i, int *sign)
 
 long long			ft_atoi(const char *str)
 {
-	int		i;
-	long long 		answer;
-	int		sign;
+	int			i;
+	long long	answer;
+	int			sign;
 
 	sign = 0;
 	i = skip_whitespaces(str);

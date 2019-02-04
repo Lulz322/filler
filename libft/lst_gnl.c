@@ -1,11 +1,19 @@
-//
-// Created by bender on 1/24/19.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lst_gnl.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iruban <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/02/04 12:51:51 by iruban            #+#    #+#             */
+/*   Updated: 2019/02/04 12:51:52 by iruban           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "includes/libft.h"
 #include "../includes/get_next_line.h"
 
-
-void		ft_list_add_last(t_gnl **save, t_gnl *elem)
+void	ft_list_add_last(t_gnl **save, t_gnl *elem)
 {
 	t_gnl *list;
 
